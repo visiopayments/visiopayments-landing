@@ -516,3 +516,7 @@ body {
 .sales-step:nth-child(3) .step-line {
   animation-name: step-line-3;
 }
+
+.soft-lift:hover {
+  border-color: var(--primary);
+}
