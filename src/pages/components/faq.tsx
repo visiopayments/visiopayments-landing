@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Quais criptos posso aceitar?",
     answer:
-      "A plataforma trabalha com USDT, USDC, ETH e SOL, respeitando a rede e o token definidos na criação da invoice.",
+      "A Vi$io Payments aceita USDT, USDC, ETH e SOL, respeitando a rede e o token definidos na criação da invoice.",
   },
   {
     question:
@@ -20,12 +20,12 @@ const faqs = [
   {
     question: "Como acompanho o status do pagamento?",
     answer:
-      "Cada invoice possui status, endereço, QR Code, expiração e callbackUrl para receber atualizações no seu sistema.",
+      "Você pode acompanhar o status do seu invoice na aba 'Invoices', além de conferir a transação na blockchain com o TX Hash.",
   },
   {
     question: "Como e quando eu recebo o dinheiro das minhas vendas?",
     answer:
-      "O controle é 100% seu. Quando uma venda é concluída, o saldo entra instantaneamente no seu dashboard. A partir de lá, você realiza o saque sob demanda direto para a sua carteira no momento que for mais estratégico para o seu fluxo de caixa, permitindo otimizar o pagamento de taxas de rede e centralizar seus recebimentos.",
+      "O controle é 100% seu. Quando uma venda é concluída, o saldo entra instantaneamente na sua conta e fica visível no dashboard. A partir de lá, você realiza o saque quando preferir, sem limites.",
   },
 ];
 
