@@ -57,7 +57,7 @@ export function PressArticles() {
                   src={article.image}
                   alt=""
                   draggable={false}
-                  className="h-full w-full rounded-2xl object-cover opacity-70"
+                  className="h-full w-full rounded-2xl object-cover opacity-30"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-linear-to-t from-background/80 via-background/10 to-transparent" />
                 <div className="absolute inset-x-0 -bottom-8 z-10 mx-auto flex max-w-72 items-center justify-center px-4">
@@ -65,7 +65,7 @@ export function PressArticles() {
                     src={article.logo}
                     alt={article.publication}
                     draggable={false}
-                    className="max-h-16 max-w-full object-contain"
+                    className="max-h-20 max-w-full object-contain"
                   />
                 </div>
               </div>
@@ -89,10 +89,10 @@ export function PressArticles() {
           ))}
         </div>
 
-        <div className="flex justify-center items-center">
-          <Button asChild className="mt-6 h-12 px-6 text-base">
+        <div className="mt-10 flex w-full justify-center">
+          <Button asChild className="h-12 px-6 text-base">
             <a href="#">
-              Criar Conta
+              Começar a aceitar cripto hoje
               <ArrowRight className="size-5" />
             </a>
           </Button>

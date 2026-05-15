@@ -83,7 +83,7 @@ export function Api() {
               {"\n    "}
               <span className="code-token-property">amount</span>
               <span className="code-token-punctuation">: </span>
-              <span className="code-token-number">149.9</span>
+              <span className="code-token-number">1.5</span>
               <span className="code-token-punctuation">,</span>
               {"\n    "}
               <span className="code-token-property">chain</span>

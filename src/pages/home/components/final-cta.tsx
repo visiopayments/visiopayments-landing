@@ -13,15 +13,17 @@ export function FinalCta() {
         />
         <div className="absolute inset-0 rounded-2xl bg-linear-to-t from-background/90 via-background/30 to-transparent" />
         <div className="absolute inset-x-0 -bottom-9 z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center sm:-bottom-10">
-          <h2 className="text-3xl font-extrabold leading-tight text-primary drop-shadow-[0_14px_30px_rgba(0,0,0,0.65)] sm:text-5xl">
-            Comece a aceitar cripto na sua operação.
+          <h2 className="text-3xl font-extrabold leading-tight text-white drop-shadow-[0_14px_30px_rgba(0,0,0,0.65)] sm:text-5xl">
+            Comece a aceitar{" "}
+            <span className="text-primary underline">cripto</span> hoje na sua
+            operação.
           </h2>
         </div>
       </div>
-      <div className="mx-auto mt-16 flex max-w-2xl flex-col items-center text-center sm:mt-20">
+      <div className="mx-auto mt-16 flex max-w-2xl flex-col items-center text-center sm:mt-16">
         <p className="max-w-2xl text-sm leading-6 text-muted-foreground sm:text-base">
-          Receba pagamentos de clientes globais com checkout cripto, confirmação
-          automática e controle financeiro em um só lugar.
+          Uma infraestrutura de pagamentos global para receber com velocidade,
+          clareza e menos fricção.
         </p>
 
         <Button asChild className="mt-6 h-12 px-6 text-base">

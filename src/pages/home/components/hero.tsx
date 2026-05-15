@@ -9,8 +9,8 @@ import { TokenSOL } from "@web3icons/react";
 const HERO_WORDS = ["cripto", "Ethereum", "Solana", "USDT", "USDC"];
 
 const tokens: { token: string; color: string }[] = [
-  { token: "ETH", color: "#627eea" },
-  { token: "SOL", color: "#9945ff" },
+  { token: "Ethereum", color: "#627eea" },
+  { token: "Solana", color: "#9945ff" },
   { token: "USDC", color: "#2775ca" },
   { token: "USDT", color: "#26a17b" },
 ];

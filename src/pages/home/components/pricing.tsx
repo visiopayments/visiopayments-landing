@@ -23,7 +23,7 @@ export function Pricing() {
             1%
           </h2>
           <p className="mt-5 text-2xl font-semibold leading-tight sm:text-4xl">
-            de taxa por invoice paga.
+            de taxa por invoice pago.
           </p>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
             A cobrança acontece somente quando o pagamento é confirmado. Sem

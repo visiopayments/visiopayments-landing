@@ -4,12 +4,12 @@ const faqs = [
   {
     question: "A Vi$io Payments cobra mensalidade?",
     answer:
-      "Não. A proposta é simples: taxa fixa de 1% por pagamento aprovado, sem mensalidade escondida.",
+      "Não. A proposta é simples: taxa fixa de 1% por invoice aprovado, sem mensalidade escondida.",
   },
   {
     question: "Quais criptos posso aceitar?",
     answer:
-      "A Vi$io Payments aceita USDT, USDC, ETH e SOL, respeitando a rede e o token definidos na criação da invoice.",
+      "Atualmente, você pode aceitar as principais e mais sólidas moedas do mercado: USDT, USDC, Ethereum (ETH) e Solana (SOL). Focamos nessas opções para garantir velocidade máxima no pagamento e alta liquidez para o seu caixa.",
   },
   {
     question:
@@ -18,14 +18,15 @@ const faqs = [
       "Liberdade financeira e segurança. No sistema tradicional, você sofre com o risco constante de fraudes por chargeback e fica refém do modelo D+30 das adquirentes. Com a Vi$io Payments, as transações em blockchain são irreversíveis, zero chargeback, e o saldo fica disponível e visível no seu painel em segundos, acabando com a burocracia bancária.",
   },
   {
-    question: "Como acompanho o status do pagamento?",
+    question:
+      "Minha equipe precisa entender de blockchain para operar com a Vi$io Payments?",
     answer:
-      "Você pode acompanhar o status do seu invoice na aba 'Invoices', além de conferir a transação na blockchain com o TX Hash.",
+      "Não. Nós lidamos com a parte 'difícil' da tecnologia para que você não precise. Para a sua equipe de tecnologia, integrar a Vi$io Payments é tão familiar quanto integrar qualquer API REST padrão de mercado. E para o seu financeiro, o painel de controle oferece uma gestão clara em dólares, sem a necessidade de entender os bastidores técnicos das redes Ethereum, Base ou Solana.",
   },
   {
     question: "Como e quando eu recebo o dinheiro das minhas vendas?",
     answer:
-      "O controle é 100% seu. Quando uma venda é concluída, o saldo entra instantaneamente na sua conta e fica visível no dashboard. A partir de lá, você realiza o saque quando preferir, sem limites.",
+      "O controle é 100% seu. Quando uma venda é concluída, o saldo entra instantaneamente na sua conta e fica visível no dashboard. A partir de lá, você realiza o saque quando preferir, sem limites e sem taxas extras.",
   },
 ];
 
@@ -56,7 +57,7 @@ export function Faq() {
           {faqs.map((faq) => (
             <details
               key={faq.question}
-              className="group rounded-xl border border-border/70 bg-card/55 p-5 open:bg-card"
+              className="group rounded-xl border border-border/70 bg-card/55 p-5 open:bg-card transition-all duration-150"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                 <span className="font-medium select-none">{faq.question}</span>
