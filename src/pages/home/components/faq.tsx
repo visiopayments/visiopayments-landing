@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Badge } from "@/components/ui/badge";
 
 const faqs = [
@@ -31,6 +33,8 @@ const faqs = [
 ];
 
 export function Faq() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
   return (
     <section className="border-b border-border/70 px-6 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto grid max-w-7xl gap-6 lg:gap-10 lg:grid-cols-[0.82fr_1.18fr]">
@@ -54,22 +58,52 @@ export function Faq() {
         </div>
 
         <div className="grid gap-4">
-          {faqs.map((faq) => (
-            <details
-              key={faq.question}
-              className="group rounded-xl border border-border/70 bg-card/55 p-5 open:bg-card transition-all duration-150"
-            >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
-                <span className="font-medium select-none">{faq.question}</span>
-                <span className="flex text-2xl select-none size-8 shrink-0 items-center justify-center text-primary transition-transform group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-              <p className="mt-4 text-sm leading-6 text-muted-foreground select-none">
-                {faq.answer}
-              </p>
-            </details>
-          ))}
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+
+            return (
+              <div
+                key={faq.question}
+                className={[
+                  "rounded-xl border border-border/70 p-5 transition-all duration-300",
+                  isOpen ? "bg-card shadow-xl shadow-black/10" : "bg-card/55",
+                ].join(" ")}
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
+                  aria-expanded={isOpen}
+                >
+                  <span className="font-medium select-none">
+                    {faq.question}
+                  </span>
+                  <span
+                    className={[
+                      "flex text-2xl select-none size-8 shrink-0 items-center justify-center text-primary transition-transform duration-300",
+                      isOpen ? "rotate-45" : "rotate-0",
+                    ].join(" ")}
+                  >
+                    +
+                  </span>
+                </button>
+                <div
+                  className={[
+                    "grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
+                    isOpen
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0",
+                  ].join(" ")}
+                >
+                  <div className="min-h-0 overflow-hidden">
+                    <p className="pt-4 text-sm leading-6 text-muted-foreground select-none">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

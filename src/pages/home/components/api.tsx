@@ -31,16 +31,16 @@ export function Api() {
             </a>
           </Button>
         </div>
-        <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-2xl shadow-black/20">
-          <div className="flex items-center gap-2 border-b border-border/70 bg-card/70 px-4 py-3">
-            <span className="size-3 rounded-full bg-red-400/80" />
-            <span className="size-3 rounded-full bg-yellow-300/80" />
-            <span className="size-3 rounded-full bg-emerald-400/80" />
-            <span className="ml-3 text-xs text-muted-foreground">
+        <div className="overflow-hidden rounded-2xl border border-[#44475a] bg-[#282a36] shadow-2xl shadow-black/20">
+          <div className="flex items-center gap-2 border-b border-[#44475a] bg-[#21222c] px-4 py-3">
+            <span className="size-3 rounded-full bg-[#ff5555]" />
+            <span className="size-3 rounded-full bg-[#f1fa8c]" />
+            <span className="size-3 rounded-full bg-[#50fa7b]" />
+            <span className="ml-3 text-xs text-[#6272a4]">
               create-invoice.ts
             </span>
           </div>
-          <pre className="overflow-x-auto p-5 text-[11px] leading-5 text-muted-foreground sm:text-xs">
+          <pre className="overflow-x-auto p-5 text-[11px] leading-5 text-[#f8f8f2] sm:text-xs">
             <code>
               <span className="code-token-keyword">const</span>{" "}
               <span className="code-token-property">response</span>{" "}
